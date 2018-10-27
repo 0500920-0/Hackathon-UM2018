@@ -28,8 +28,10 @@ function broadcast($fb_id, $user, $chatfuel_block_name, $data=array()){
     curl_setopt_array($ch, array(
       CURLOPT_URL => $url,
       CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_POST => 1,
+      CURLOPT_POSTFIELDS => $post_data,
       CURLOPT_CUSTOMREQUEST => "POST",
-      CURLOPT_HTTPHEADER => array('Content-Type: application/json'),
+      CURLOPT_HTTPHEADER => array('Content-Type: application/json', 'Content-Length: ' . strlen($post_data)),
     ));
 
     // execute post
@@ -39,7 +41,8 @@ function broadcast($fb_id, $user, $chatfuel_block_name, $data=array()){
     $errorNames = "";
     if (strpos($result, 'false') == TRUE) {
       echo "$user 無法傳送 $result\n";
-      $errorNames .= $userId.",";
+      $errorNames .= $user.",";
+      // exit($errorNames);
       return $errorNames;
     } else {
       echo "$user 成功傳送\n";
