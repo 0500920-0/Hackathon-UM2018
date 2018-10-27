@@ -1,0 +1,151 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gallery</title>
+
+    <!-- Lato Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	
+	      <link type="text/css" rel="stylesheet" href="css2/materialize.css"  media="screen,projection"/>
+
+    <!-- Stylesheet -->
+    <link href="materialize3/css/gallery-materialize.min.opt.css?8268030955633692047" rel="stylesheet">
+    
+    <script type="text/javascript" src="js2/materialize.min.js"></script>
+
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Prism -->
+    <link href="materialize3/css/prism.css?8268030955633692047" rel="stylesheet">
+</head>
+<style>
+#text{
+	margin-left: 16%;
+	margin-top: 3%;
+	margin-right: 16%;
+	height: 300px;
+	position: absolute;
+	margin-bottom:30px;
+	
+	
+}
+
+.container{
+	background-color:#19BC9C;
+}
+#credit{
+	padding-bottom: 15px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+  margin-bottom: 300px;
+}
+</style>
+  <body style="background-color:white">
+    <!-- Navbar and Header -->
+    <nav class="nav-extended">
+      <div class="nav-background">
+        <div class="ea k" style="background-image: url('data/Mu.jpg');"></div>
+      </div>
+      <div class="nav-wrapper db">
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		
+	  <ul class="hide-on-med-and-down" style="float:right">
+        <li class="k"><a href="index.html">主頁</a></li>
+        <li><a href="login.php">管理員登入</a></li>
+        <li><a href="s_login.php">學生登入</a></li>
+      </ul>
+		
+  
+
+
+        <div class="nav-header de">
+          <h1>澳門大學電力管理系統</h1>
+          <div class="ge">Hackathon team 14</div>
+        </div>
+      </div>
+	  
+<!-- <div class="categories-wrapper af lighten-1 col s6">
+        <div class="categories-container" style="background-color:#19BC9C">
+          <ul style="margin-left:16%" class="tabs tabs-fixed-width tab-demo z-depth-1">
+            <li  class="tab"><a href="#abstract">簡介</a></li>
+            <li class="tab"><a href="#realtime">實時電力數據</a></li>
+            <li  class="tab"><a href="#team">制作團隊</a></li>
+          </ul>
+        </div>
+      </div> -->
+	  <div class="col s6">
+        <div class="categories-container" style="background-color:#19BC9C;color:white">
+          <ul style="margin-left:16%" class="tabs tabs-fixed-width tab-demo z-depth-1">
+            <li  class="tab"><a href="#abstract">簡介</a></li>
+            <li class="tab"><a href="#realtime">實時電力數據</a></li>
+            <li  class="tab"><a href="#team">制作團隊</a></li>
+          </ul>
+        </div>
+      </div>
+	  
+    </nav>
+<ul id="slide-out" class="sidenav">
+    
+    <li><a href="index.html">主頁</a></li>
+    <li><a href="login.php">管理員登入</a></li>
+    <li><a href="s_login.php">學生登入</a></li>
+  </ul>
+<div id="text" >
+
+
+<div id="abstract" class="col s12">
+	<div class="col-md-6 col-sm-6 col-xs-12">
+			<h3>簡介</h3>
+		<div class="separetor2"></div>
+		<p style="font-family: sans-serif;"><font size="3">這是一個基於澳門大學的電錶數據，而得出的電力系統模型。它除了能夠實時監察電力數據，亦可以對澳大的不同電錶進行電能監控。在緊急的時候，電管理系統亦可利用SMS與Messenger程式，向用戶傳送即時警報，保障澳大學生的安全。而電力系統模型亦設有電子賬單系統，能利用一個更為環保的方法，讓用戶能準時繳交電費，達致一箭雙鵰的效果。我們的系統還設有電流分析與預測，這樣可以有效地減低澳大學生們的整體用電量。
+	</div>
+</div>
+
+<div id="realtime" class="col s12"><img class="brand-logo" src="data/Photo1.png" /></div>
+<div id="team" class="col s12">
+	<div class="col-md-6 col-sm-6 col-xs-12">
+		<h3>制作團隊</h3>
+		<div class="separetor2"></div>
+		<p style="font-family: sans-serif;"><font size="3">由澳門培正學生制作</font></p>
+</div>
+</div>
+</div> 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+
+</script>
+</body>
+
+		<footer>
+          <div style="background-color:#19BC9C;">
+            	<div id="credit"><center><font style="color:white">Made with love by Hackathon14</font></center></div>
+            	<a class="brand-logo" href="https://www.umac.mo/zh-hant/index.html"><img src="data/MU logo.png" style="width:20%"/></a>
+		  </div>
+		</footer>
+
+
+            
+    <!-- Core Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/materialize/0.98.0/js/materialize.min.js"></script>
+    
+   
+
+  
+</html>

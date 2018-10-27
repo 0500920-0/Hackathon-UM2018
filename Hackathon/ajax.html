@@ -1,0 +1,13 @@
+function getTempData() {
+      document.getElementById("desTitle").innerHTML = "氣温(℃)";
+      xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            console.log()
+              document.getElementById("dataPath").innerHTML = this.responseText;
+              document.getElementById("stationList").innerHTML = this.responseText;
+          }
+      };
+      xmlhttp.open("GET","http://home.puiching.edu.mo/~pcama/widgetElement/nowWeather/temp.php",true);
+      xmlhttp.send();
+  }

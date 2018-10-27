@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gallery</title>
+
+    <!-- Lato Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheet -->
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css2/materialize.css"  media="screen,projection"/>
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Prism -->
+   
+</head>
+  <body style="background-color:white">
+	<nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#!">Sass</a></li>
+        <li><a href="#!">Components</a></li>
+        <li><a href="collaps">Javascript</a></li>
+        
+      </ul> 
+    </div>
+  </nav>
+
+   <ul id="slide-out" class="sidenav">
+   
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>  
+  
+   <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+  </script>
+     <script type="text/javascript" src="js2/materialize.min.js"></script>
+   </body>
+
+  
+</html>
